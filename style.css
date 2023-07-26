@@ -1,0 +1,94 @@
+:root {
+    --primary-color: #3f51b5;
+    --secondary-color: #f50057;
+    --text-color: #333;
+    --bg-color: #f8f9fa;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+h1 {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+h2 {
+    color: var(--secondary-color);
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.container-fluid {
+    padding: 20px;
+}
+
+/* Main container styles */
+.api-container {
+    height: 90vh;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.random-user-btn {
+    background-color: var(--primary-color);
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.random-user-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.random-user-list {
+    list-style: none;
+    padding: 0;
+}
+
+.random-user-list li {
+    margin-bottom: 10px;
+}
+
+.random-user-list li strong {
+    font-weight: 600;
+}
+
+/* Adjust the layout for small screens */
+@media (max-width: 768px) {
+    .container-fluid {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .random-user-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
